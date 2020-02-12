@@ -87,3 +87,7 @@ let contactInfo = document.querySelectorAll('.contact p')
 contactInfo[0].innerHTML = siteContent['contact']['address']
 contactInfo[1].innerHTML = siteContent['contact']['phone']
 contactInfo[2].innerHTML = siteContent['contact']['email']
+
+// set footer info
+
+document.querySelector('footer p').innerHTML = siteContent['footer']['copyright']
