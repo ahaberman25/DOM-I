@@ -54,11 +54,22 @@ navLinks[3].innerHTML = siteContent['nav']['nav-item-4']
 navLinks[4].innerHTML = siteContent['nav']['nav-item-5']
 navLinks[5].innerHTML = siteContent['nav']['nav-item-6']
 
+    // changing color of navigation
+
+    navLinks.forEach(link => {link.style.color = 'green'})
+
+    // adding 2 links using prepend and append
+
+    let parent = document.querySelector('nav a')
+
+    navLinks[0].append(' Team')
+    navLinks[1].prepend('Item ')
+
 // set cta 
 
 document.querySelector('h1').innerHTML = siteContent['cta']['h1']
 document.querySelector('button').innerHTML = siteContent['cta']['button']
-document.querySelector('.cta img').setAttribute('src', siteContent['cta']['img-src'])
+document.querySelector('#cta-img').setAttribute('src', siteContent['cta']['img-src'])
 
 // set main content
 
@@ -76,7 +87,7 @@ mainContentBlockText[1].innerHTML = siteContent['main-content']['about-content']
 mainContentBlockText[2].innerHTML = siteContent['main-content']['services-content']
 mainContentBlockText[3].innerHTML = siteContent['main-content']['product-content']
 
-document.querySelector('.middle-img').setAttribute('src', siteContent['main-content']['middle-img-src'])
+document.querySelector('#middle-img').setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 // set contact info
 
