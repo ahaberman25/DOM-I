@@ -102,3 +102,17 @@ contactInfo[2].innerHTML = siteContent['contact']['email']
 // set footer info
 
 document.querySelector('footer p').innerHTML = siteContent['footer']['copyright']
+
+// Stretch style things
+
+contactInfo[0].style.backgroundColor = 'red'
+contactInfo[1].style.backgroundColor = 'white'
+contactInfo[2].style.backgroundColor = 'blue'
+
+contactInfo[0].style.color = 'white'
+contactInfo[1].style.color = 'grey'
+contactInfo[2].style.color = 'white'
+
+document.querySelector('h1').style.color = 'orange'
+
+
